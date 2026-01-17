@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DREAM NATURE TOURS (PVT) LTD</title>
+<style>
+body{margin:0;font-family:Arial;background:#f8f8f8;scroll-behavior:smooth}
+nav{position:fixed;top:0;width:100%;background:#0b5d4f;color:#fff;padding:15px 30px;font-weight:bold;z-index:1000}
+nav a{color:#fff;margin:0 12px;text-decoration:none}
+header{margin-top:70px;height:85vh;background:url('images/hero.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#fff}
+.box{background:rgba(0,0,0,.6);padding:35px;border-radius:12px;text-align:center}
+section{padding:70px;max-width:1200px;margin:auto}
+h2{color:#0b5d4f}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+.card img,.grid img{width:100%;height:220px;object-fit:cover}
+footer{background:#111;color:#fff;text-align:center;padding:30px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:15px 18px;border-radius:50%;font-size:24px;text-decoration:none}
+</style>
+<script>
+function sendBooking(){
+var name=document.getElementById('name').value;
+var phone=document.getElementById('phone').value;
+var pack=document.getElementById('package').value;
+var msg=document.getElementById('msg').value;
+var text=`Hello DREAM NATURE TOURS,%0AName: ${name}%0APhone: ${phone}%0APackage: ${pack}%0AMessage: ${msg}`;
+window.open(`https://wa.me/94776853143?text=${text}`,'_blank');
+}
+</script>
+</head>
+<body>
+
+<nav>
+DREAM NATURE TOURS
+<a href="#about">About</a>
+<a href="#packages">Packages</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<div class="box">
+<h1>DREAM NATURE TOURS (PRIVATE) LIMITED</h1>
+<p>Coastal Safari • Family Adventure • Wilderness Explorer<br>
+Central Highlands Expedition • Bird Watcher’s Paradise • Custom Expeditions</p>
+</div>
+</header>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+DREAM NATURE TOURS (PVT) LTD is a Sri Lanka based eco-tourism company specializing in
+wildlife safaris, rainforest exploration, bird watching tours, camping adventures,
+family holidays and fully customized travel experiences across the island.
+</p>
+</section>
+
+<section id="packages">
+<h2>Tour Packages</h2>
+<div class="grid">
+<div class="card"><img src="images/tour1.jpg"><div style="padding:15px">
+<b>Wilderness Explorer – 5 Days</b><br>
+Rainforests, camping & wildlife safaris. Ideal for adventure lovers.
+</div></div>
+<div class="card"><img src="images/tour2.jpg"><div style="padding:15px">
+<b>Bird Watcher’s Paradise – 4 Days</b><br>
+Bundala & Sinharaja. Perfect for bird lovers and photographers.
+</div></div>
+<div class="card"><img src="images/tour3.jpg"><div style="padding:15px">
+<b>Central Highlands Expedition – 3 Days</b><br>
+Knuckles, waterfalls & trekking experiences.
+</div></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Our Tours Gallery</h2>
+<div class="grid">
+<img src='images/gallery1.jpg'><img src='images/gallery2.jpg'><img src='images/gallery3.jpg'><img src='images/gallery4.jpg'><img src='images/gallery5.jpg'><img src='images/gallery6.jpg'><img src='images/gallery7.jpg'><img src='images/gallery8.jpg'><img src='images/gallery9.jpg'><img src='images/gallery10.jpg'>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact & Booking</h2>
+<p>
+Hotline: +94 77 685 31 43<br>
+Tel: +94 45 313 55 55<br>
+Email: request@dreamnaturetours.com
+</p>
+
+<h3>Quick WhatsApp Booking</h3>
+<input id="name" placeholder="Full Name"><br>
+<input id="phone" placeholder="Phone Number"><br>
+<select id="package">
+<option>Wilderness Explorer</option>
+<option>Bird Watcher’s Paradise</option>
+<option>Central Highlands Expedition</option>
+</select><br>
+<textarea id="msg" placeholder="Your Message"></textarea><br>
+<button onclick="sendBooking()">Send via WhatsApp</button>
+</section>
+
+<section>
+<h2>Our Directors</h2>
+<div class="grid">
+<div class="card"><img src="images/director1.jpg"><div style="padding:15px">
+<b>Devika Dulanjanee Gunathilaka</b><br>
+Languages: English, Tamil, Japanese<br>
+IELTS Qualified
+</div></div>
+<div class="card"><img src="images/director2.jpg"><div style="padding:15px">
+<b>Sajith Jayakodi</b><br>
+Languages: English, Tamil, Japanese
+</div></div>
+<div class="card"><img src="images/director3.jpg"><div style="padding:15px">
+<b>Shashini Kaushalya Pathirana</b><br>
+Languages: English, Japanese
+</div></div>
+<div class="card"><img src="images/director4.jpg"><div style="padding:15px">
+<b>Sumudu Dilhan Pushpakumara</b><br>
+Languages: English, Japanese
+</div></div>
+<div class="card"><img src="images/director5.jpg"><div style="padding:15px">
+<b>Nishantha Chandana Gunathilaka</b><br>
+Languages: English, Japanese
+</div></div>
+</div>
+</section>
+
+<footer>© 2026 DREAM NATURE TOURS (PVT) LTD</footer>
+<a class="whatsapp" href="https://wa.me/94776853143" target="_blank">💬</a>
+
+</body>
+</html>
